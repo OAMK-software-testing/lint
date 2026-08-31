@@ -8,14 +8,6 @@ function BuggyCounter() {
     document.title = `Count is ${count}`
   }, [count])
 
-  // Fix: hooks must run unconditionally in the same order every render, so the
-  // `count > 5` check moves inside the effect body instead of wrapping the hook
-  useEffect(() => {
-    if (count > 5) {
-      console.log('count exceeded 5')
-    }
-  }, [count])
-
   // Fix: `unusedValue` was never read, so it was removed entirely
 
   function increment() {

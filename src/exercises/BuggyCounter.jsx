@@ -7,24 +7,20 @@ function BuggyCounter() {
     document.title = `Count is ${count}`
   }, [count])
 
-  // Bug: declared but never used
   const unusedValue = 42
 
   function increment() {
-    // Bug: `cout` is not defined anywhere (typo for `count`)
     setCount(cout + 1)
   }
 
   function reset() {
     setCount(0)
     return
-    // Bug: this line can never run
     console.log('resetting')
   }
 
   function describe(value) {
     switch (value) {
-      // Bug: lexical declaration in a case block without braces
       case 1:
         const label = 'one'
         return label

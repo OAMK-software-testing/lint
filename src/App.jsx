@@ -1,3 +1,4 @@
+import './App.css'
 import BuggyCounter from './exercises/BuggyCounter'
 
 function App() {

@@ -7,12 +7,6 @@ function BuggyCounter() {
     document.title = `Count is ${count}`
   }, [count])
 
-  useEffect(() => {
-    if (count > 5) {
-      console.log('count exceeded 5')
-    }
-  }, [count])
-
   // Bug: declared but never used
   const unusedValue = 42
 

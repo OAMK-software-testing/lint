@@ -35,6 +35,7 @@ function BuggyCounter() {
   return (
     <div className="buggy-counter">
       <p>Count is {count}</p>
+      {/* Fix: added descriptive alt text for the counter icon */}
       <img src="/counter-icon.svg" alt="Counter icon" />
       <button type="button" onClick={increment}>Increment</button>
       <button type="button" onClick={reset}>Reset</button>

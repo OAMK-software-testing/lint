@@ -5,7 +5,7 @@ function BuggyCounter() {
 
   useEffect(() => {
     document.title = `Count is ${count}`
-  }, [count])
+  }, [])
 
   const unusedValue = 42
 

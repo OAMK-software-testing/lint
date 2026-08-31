@@ -21,12 +21,13 @@ npm run lint
 
 This runs ESLint over the whole project using the rules defined in
 [eslint.config.js](eslint.config.js) (JavaScript recommended rules, React
-Hooks rules, and a Vite/React Fast Refresh rule). Read through the output —
-it tells you the file, line number, and rule name for each problem.
+rules, React Hooks rules, a Vite/React Fast Refresh rule, and JSX
+accessibility rules). Read through the output — it tells you the file, line
+number, and rule name for each problem.
 
 ## Step 2 — Fix the errors one at a time
 
-There are **6 issues** hiding in `BuggyCounter.jsx`. For each one:
+There are **7 issues** hiding in `BuggyCounter.jsx`. For each one:
 
 1. Read the ESLint error message and note the rule name (e.g. `no-unused-vars`).
 2. Open the file and find the offending line.
@@ -43,6 +44,7 @@ There are **6 issues** hiding in `BuggyCounter.jsx`. For each one:
 - `no-case-declarations`
 - `react-hooks/rules-of-hooks`
 - `react-hooks/exhaustive-deps`
+- `jsx-a11y/alt-text`
 
 ## Step 3 — Try it out
 

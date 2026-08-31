@@ -3,17 +3,9 @@ import { useState, useEffect } from 'react'
 function BuggyCounter() {
   const [count, setCount] = useState(0)
 
-  // Bug: `count` is used inside but missing from the dependency array
   useEffect(() => {
     document.title = `Count is ${count}`
-  }, [])
-
-  // Bug: hooks must not be called conditionally
-  if (count > 5) {
-    useEffect(() => {
-      console.log('count exceeded 5')
-    }, [count])
-  }
+  }, [count])
 
   // Bug: declared but never used
   const unusedValue = 42

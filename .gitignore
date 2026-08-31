@@ -23,4 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-src/exercises/BuggyCounter.solution.jsx
